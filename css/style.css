@@ -1,0 +1,427 @@
+
+body{
+
+font-family: 'Poppins', sans-serif;
+    
+}
+/* home */
+
+#home{
+    background-image:linear-gradient( rgba(0,0,0,0.7) ,rgba(0,0,0,0.7) ) , url(../imgs/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: black;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.navbar .navbar-nav .nav-link.active{
+    color: black;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+.navbar .nav-item .nav-link{
+    position: relative;
+    width: fit-content !important;
+}
+.navbar .navbar-nav .nav-link::after{
+    content: "";
+    height: 2;
+    width: 0%;
+    background-color: black !important;
+    position: absolute;
+    bottom: 0;
+    left: 10;
+    transition: all 0.5s;
+
+}
+.navbar .navbar-nav .nav-link:focus::after {
+    width: 73%;
+}
+
+
+
+.navbar .navbar-brand {
+    color: black;
+    font-weight: bolder;
+}
+h1::after{
+    content: " ";
+    animation: typing 1.5s infinite;
+}
+
+@keyframes typing{
+0%{
+  content: " D|";
+}
+5%{
+    content:" De|" ;
+}
+10%{
+    content: " Dev|";
+}
+15%{
+    content:" Deve|";
+}
+20%{
+    content: " Devel|";
+}
+25%{
+    content: " Develo|";
+}
+30%{
+    content: " Develop|";
+}
+35%{
+    content: " Develope|";
+}
+40%{
+    content: " Developer|";
+}
+45%{
+    content: " Developer|";
+}
+50%{
+    content: " Developer|";
+}
+55%{
+    content: " Developer|";
+}
+60%{
+    content: " Developer|";
+}
+65%{
+    content: " Develope|";
+}
+70%{
+    content: " Develop|";
+}
+75%{
+    content: " Develo|";
+}
+80%{
+    content: " Devel|";
+}
+85%{ 
+    content: " Deve|";
+}
+90%{
+    content: " Dev|";
+}
+95%{
+    content: " De|";
+}
+100%{
+    content: " D|";
+}
+
+}
+
+.icon a{
+color: white;
+
+font-size: 15px;
+}
+.fa-brands{
+    padding-top:7 ;
+    margin-right: 20px;
+    background-color: rgba(0, 0, 0, 0.884);
+    width: 30;
+    height: 30;
+    text-align: center;
+    border-radius: 50%;
+}
+
+/* About */
+#about .imag{
+    position: relative;
+    padding-left: 30px;
+}
+#about .imag::after{
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+.button1{
+width: fit-content;
+font-size: 15;
+font-weight: 400;
+padding-left: 20;
+padding-right: 20;
+
+}
+.btn.button1:hover{
+    color: black;
+    background-color: transparent;
+}
+
+
+.progress{
+  height: 25px;
+  position: relative;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+  
+}
+
+ .content1{
+    background-color: #1c1c1c;
+   padding: 3;
+   border-radius: 5px;
+ }
+
+
+ .content1.content1{
+    width: 95%;
+    animation: pro1 1s  ;
+}
+
+@keyframes pro1{
+0%{
+    width: 0;
+}
+100%{
+    width: 95%;
+}
+
+}
+
+.content1.content2{
+    width: 80%;
+    animation: pro2 1s  ;
+}
+
+@keyframes pro2{
+0%{
+    width: 0;
+}
+100%{
+    width:80%;
+}
+
+}
+
+.content1.content3{
+    width: 90%;
+    animation: pro3 1s  ;
+}
+
+@keyframes pro3{
+0%{
+    width: 0;
+}
+100%{
+    width: 90%;
+}
+
+}
+
+/* Services */
+
+.bg-gray{
+    background: #f7f7f7 !important;
+}
+.content h3{
+    z-index: 10;
+    display: inline-block;
+}
+.content{
+    
+    text-align: center;
+}
+.content h3::after{
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+.icon1{
+    transition: all 0.5s;
+}
+.all:hover .icon1{
+    background-color: black !important;
+    color: white;
+    
+}
+
+/* Portfolio */
+.modal2{
+    
+bottom: 100%;
+left: 95%;
+}
+.icon2 i{
+    width: 25px;
+    height: 25px;
+    padding: 7px;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    font-size: 10;
+}
+ .icon2 i:hover{
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+   box-sizing: border-box;
+
+}
+
+.layer{
+    position: absolute;
+    top: 5;
+    bottom: 5;
+    left: 5;
+    right: 5;
+    background-color: rgba(255, 255, 255, 0.918);
+    opacity: 0;
+    transition:all .5s;
+   
+
+}
+
+.images:hover .layer{
+    opacity: 1;
+
+}
+.portfplio-contant h6{
+    padding-bottom: 15;
+    transition: all 1s;
+}
+.layer:hover h6{
+ padding-bottom: initial;
+}
+
+
+.nav .nav-item .nav-link {
+    color: black;
+    font-weight: bold;
+    position: relative;
+}
+.nav .nav-item .nav-link::after{
+    content: "";
+    height: 2;
+    width: 0%;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 10;
+    transition: all 0.5s;
+}
+.nav .nav-item .nav-link:focus::after {
+    width: 70%;
+}
+
+
+/* Testimonials */
+.carousel-indicators [data-bs-target] {
+    height: 10;
+    width: 10;
+    border-radius: 50%;
+    background-color: #869791;
+
+}
+
+/* count */
+.py-50{
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    
+}
+/* team */
+
+.icons2 i{
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+}
+ .icons2 i:hover{
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+   box-sizing: border-box;
+
+}
+.layerr{
+    position: absolute;
+    top: 5;
+    bottom: 5;
+    left: 5;
+    right: 5;
+    background-color: rgba(255, 255, 255, 0.952);
+    opacity: 0;
+    transition: all 0.5s ;
+    
+    transform: rotateY( 180deg) scale(.5);                
+    
+}
+.image6{
+    overflow: hidden;
+}
+img{
+    transition: all 0.5s;
+    
+}
+.image6:hover img  {
+    transform: scale(1.1);
+ 
+}
+
+ .team-card:hover .layerr {
+    opacity: 1;
+    transform: scale(1);
+    transform: rotateY( 0deg);
+}
+/* contact */
+.form-control{
+    background-color:rgb(244, 244, 244) ;
+    border: 0;
+}
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: rgb(244, 244, 244);
+    border:none;
+    box-shadow: none;
+    
+   
+}
+ .btn3{
+    background-color: black;
+    color: white;
+    padding-left:30;
+    padding-right: 30;
+    font-size: 15;
+    
+}
+.btn3:hover{
+    background-color: black;
+    color: white;
+}
+.mb-50{
+    margin-bottom: 80px;
+}
+.bg-black1{
+    background-color: #1c1c1c;
+}
